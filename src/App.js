@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Tasks from './components/Tasks';
 
 function App() {
-	const [tasks, setState] = useState([
+	const [tasks, setTasks] = useState([
 		{
 			id: 1,
 			title: 'test1',
@@ -21,10 +21,19 @@ function App() {
 		}
 	]);
 
+	// Delete Task
+	const deleteTask = (id) => {
+		setTasks(tasks.filter((task) => task.id !== id));
+	};
+
 	return (
 		<div className='container'>
 			<Header title='Task Tracker' />
-			<Tasks tasks={tasks} />
+			{tasks.length > 0 ? (
+				<Tasks tasks={tasks} onDelete={deleteTask} />
+			) : (
+				<p>No tasks pending</p>
+			)}
 		</div>
 	);
 }
