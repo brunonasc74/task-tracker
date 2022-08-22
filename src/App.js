@@ -6,18 +6,21 @@ function App() {
 	const [tasks, setTasks] = useState([
 		{
 			id: 1,
-			title: 'test1',
-			appointment: 'lalala'
+			text: 'Doctors Appointment',
+			day: 'Feb 5th at 2:30pm',
+			reminder: true
 		},
 		{
 			id: 2,
-			title: 'test2',
-			appointment: 'lalala'
+			text: 'Meeting at School',
+			day: 'Feb 6th at 1:30pm',
+			reminder: true
 		},
 		{
 			id: 3,
-			title: 'test3',
-			appointment: 'lalala'
+			text: 'Food Shopping',
+			day: 'Feb 5th at 4:00pm',
+			reminder: false
 		}
 	]);
 
@@ -26,11 +29,20 @@ function App() {
 		setTasks(tasks.filter((task) => task.id !== id));
 	};
 
+	// Toggle reminder
+	const toggleReminder = (id) => {
+		setTasks(
+			tasks.map((task) =>
+				task.id === id ? { ...task, reminder: !task.reminder } : task
+			)
+		);
+	};
+
 	return (
 		<div className='container'>
 			<Header title='Task Tracker' />
 			{tasks.length > 0 ? (
-				<Tasks tasks={tasks} onDelete={deleteTask} />
+				<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
 			) : (
 				<p>No tasks pending</p>
 			)}
