@@ -30,13 +30,20 @@ function App() {
 		setTasks(tasks.filter((task) => task.id !== id));
 	};
 
-	// Toggle reminder
+	// Toggle Reminder
 	const toggleReminder = (id) => {
 		setTasks(
 			tasks.map((task) =>
 				task.id === id ? { ...task, reminder: !task.reminder } : task
 			)
 		);
+	};
+
+	// Add Task
+	const addTask = (task) => {
+		const id = tasks.length + 1;
+		const newTask = { id, ...task };
+		setTasks([...tasks, newTask]);
 	};
 
 	return (
@@ -47,7 +54,7 @@ function App() {
 			) : (
 				<p>No tasks pending</p>
 			)}
-			<AddTask />
+			<AddTask onAdd={addTask} />
 		</div>
 	);
 }
