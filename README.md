@@ -2,6 +2,8 @@
 
 ## Usage
 
+Project currently on progress, created with React.
+
 ### Install dependencies
 
 ```
