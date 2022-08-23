@@ -15,9 +15,9 @@ body {
 	margin: 30px auto;
 	overflow: auto;
 	min-height: 300px;
-	border: 1px solid steelblue;
+	border: 3px solid #4651b4;
 	padding: 30px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .header {
@@ -62,7 +62,7 @@ body {
 }
 
 .task.reminder {
-	border-left: 5px solid green;
+	border-left: 5px solid #1c881c;
 }
 
 .task h3 {
@@ -104,9 +104,4 @@ body {
 .form-control-check input {
 	flex: 2;
 	height: 20px;
-}
-
-footer {
-	margin-top: 30px;
-	text-align: center;
 }
