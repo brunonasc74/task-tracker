@@ -1,6 +1,6 @@
 # Task Tracker App
 
-Project made with the purpose of lerning more about React. With this web app you can create whatever tasks you need to be reminded throughout the day, working with a mock back-end server, the tasks you create won't get lost when you come back, aswell the deleted tasks, will remain deleted.
+Project made with the purpose of learning more about React. With this web app you can create whatever tasks you need to be reminded throughout the day, working with a mock back-end server, the tasks you create won't get lost when you come back, aswell the deleted tasks, will remain deleted.
 
 ## Usage
 
