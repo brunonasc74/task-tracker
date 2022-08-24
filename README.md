@@ -1,6 +1,4 @@
-<center>
-    <h1 align="center">Task Tracker App</h1>
-</center>
+# Task Tracker App
 
 <p align="center">
     <img src= "./public/task_tracker1.gif" alt="Task Tracker">
