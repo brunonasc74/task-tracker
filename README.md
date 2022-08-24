@@ -1,5 +1,5 @@
 <center>
-    <h1>Task Tracker App</h1>
+    <h1 align="center">Task Tracker App</h1>
 </center>
 
 <p align="center">
