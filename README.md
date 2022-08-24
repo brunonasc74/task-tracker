@@ -1,6 +1,12 @@
-# Task Tracker App
+<center>
+    <h1>Task Tracker App</h1>
+</center>
 
-Project made with the purpose of learning more about React. With this web app you can create whatever tasks you need to be reminded throughout the day, working with a mock back-end server, the tasks you create won't get lost when you come back, aswell the deleted tasks, will remain deleted.
+<p align="center">
+    <img src= "./public/task_tracker1.gif" alt="Task Tracker">
+</p>
+
+Project made with the purpose of learning more about React. With this web app you can create whatever tasks you need to be reminded throughout the week. Working with a mock back-end server, tasks created won't get lost when you come back, as well, deleted tasks, will remain deleted.
 
 ## Usage
 
